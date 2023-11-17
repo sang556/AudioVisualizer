@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "AudioVisualizer.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController : UIViewController <AVAudioPlayerDelegate>
 
@@ -20,6 +21,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *remainingTimeLabel;
 
 - (IBAction)playPauseButtonPressed:(id)sender;
+
+//- (void)resolverMediaItem:(MPMediaItem *)music;
 
 @end
 
